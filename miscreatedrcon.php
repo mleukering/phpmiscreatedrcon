@@ -16,7 +16,7 @@
 		curl_setopt($ch, CURLOPT_POST, 1); //set curl to post
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true ); //we need data back so we've gotta set this bish
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $xml); //xml data to send to the rcon server
-		curl_setopt($ch, CURLOPT_HTTPHEADER, 'Content-Type: text/xml'); //we need to specify that we're sending xml data :)
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: text/xml')); //we need to specify that we're sending xml data :)
 
 		//execute the challenge command
 		$result = curl_exec($ch);
