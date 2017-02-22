@@ -46,6 +46,9 @@
 		//grab the useful bits from the response.
 		preg_match_all('/<string>(.*?)<\/string>/s', $result, $cmdResults);
 
+		//close connection
+		curl_close($ch);
+
 		//do something with this is you need to.  If you're just sending a command.  Fucking whatever.  Love you.
 		return $cmdResults[1][0];
 
