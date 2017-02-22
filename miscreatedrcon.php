@@ -1,5 +1,7 @@
 <?php
 
+	//written by Matthew Leukering (https://github.com/mleukering)(steam:twinturbodouche) on 02/18/2017
+
 	function sendCmd($srvAddress, $srvPort, $srvPassword, $cmd2Send){
 
 		//set our post URL to the server specified
